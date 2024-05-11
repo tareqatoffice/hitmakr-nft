@@ -1,20 +1,35 @@
 .nft-header {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	gap: 10px;
 	color: white;
 	.header-info {
+		display: grid;
+		gap: 10px;
 		.header-info-title {
+			font-size: 56px;
+			font-weight: 700;
+			letter-spacing: -0.02em;
+			line-height: 1.4em;
 		}
 		.header-info-desc {
 			font-weight: 400;
 			font-size: 16px;
+			line-height: 20px;
 		}
 		.header-counts {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 10px;
 			.header-count {
+				display: grid;
 				strong {
 					font-size: 32px;
+					line-height: 32px;
 				}
 				small {
+					font-size: 16px;
+					line-height: 16px;
 				}
 			}
 		}
