@@ -41,7 +41,7 @@
 		width: 100%;
 		object-fit: cover;
 		@media (max-width: 991px) {
-			height: 200px;
+			height: 160px;
 		}
 		@media (max-width: 480px) {
 			height: 100px;
