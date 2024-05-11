@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <section className="nft-header">
             <HeaderInfo />
-            <img src={header} alt="" />
+            <img className='m-auto' src={header} alt="" />
         </section>
     );
 };

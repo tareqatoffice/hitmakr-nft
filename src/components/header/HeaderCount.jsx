@@ -3,7 +3,7 @@ const HeaderCount = ({ info }) => {
     const { count, title } = info;
     return (
         <div className="header-count">
-            <strong><span>{count}</span> <sub>+</sub></strong>
+            <strong><span>{count}</span> <span>+</span></strong>
             <small>{title}</small>
         </div>
     );

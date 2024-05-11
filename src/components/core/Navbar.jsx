@@ -1,6 +1,5 @@
 import logo from '../../assets/logo.webp';
 import Button from "../common/Button";
-import './Navbar.css';
 const Navbar = () => {
     return (
         <nav className='flex items-center justify-between'>

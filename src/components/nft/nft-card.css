@@ -1,6 +1,6 @@
 .nft-card-area {
 	display: grid;
-	gap: 20px;
+	gap: 40px;
 	.nft-card-title {
 		font-size: 28px;
 		font-weight: 900;

@@ -12,7 +12,7 @@ const HeaderInfo = () => {
             <p className="header-info-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus ut in scelerisque facilisis et dis.
             </p>
-            <Button>
+            <Button extraClassName="w-max">
                 Explore
             </Button>
             <HeaderCount />
