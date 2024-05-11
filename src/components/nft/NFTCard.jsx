@@ -12,7 +12,7 @@ const NFTCard = ({ nft, small = false, index = 1, isAnimating = false }) => {
             initial={{ scale: 1, opacity: 1 }}
             animate={isAnimating ? {
                 filter: index === 1 ? null : "blur(5px)",
-                x: index === 0 ? cardRef.current.offsetWidth : index === 2 ? -cardRef.current.offsetWidth : null,
+                x: index === 0 ? cardRef.current.offsetWidth + 16 : index === 2 ? -cardRef.current.offsetWidth - 16 : null,
             } : null}
             transition={{ duration: 0.3 }}
             className={`nft-card-details ${index === 1 ? 'z-[10]' : 'z-[9]'} ${small ? 'small-card' : ''}`}
