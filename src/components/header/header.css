@@ -1,6 +1,22 @@
 .nft-header {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	color: white;
 	.header-info {
+		.header-info-title {
+		}
+		.header-info-desc {
+			font-weight: 400;
+			font-size: 16px;
+		}
+		.header-counts {
+			.header-count {
+				strong {
+					font-size: 32px;
+				}
+				small {
+				}
+			}
+		}
 	}
 }
