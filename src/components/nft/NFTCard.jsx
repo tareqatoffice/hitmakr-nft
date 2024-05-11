@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import NFTCardInfo from './NFTCardInfo';
 import NFTMoney from './NFTMoney';
 
-const NFTCard = ({ nft }) => {
+const NFTCard = ({ nft, small = false }) => {
     const { coverImg, nftInfo, nfts } = nft || {};
     return (
-        <div className="nft-card-details">
+        <div className={`nft-card-details ${small ? 'small-card' : ''}`}>
             <img className='nft-card-cover' src={coverImg} alt="" />
             <NFTCardInfo nftInfo={nftInfo} />
             <div className="nfts">
@@ -15,6 +15,7 @@ const NFTCard = ({ nft }) => {
     );
 };
 NFTCard.propTypes = {
-    nft: PropTypes.object
+    nft: PropTypes.object,
+    small: PropTypes.boolean
 };
 export default NFTCard;

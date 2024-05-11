@@ -1,0 +1,18 @@
+.modal-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 1px solid #dfdfdf;
+	h4 {
+		font-size: 20px;
+		line-height: 2cqw;
+	}
+}
+.modal-content {
+	padding: 10px;
+}
+.modal-footer {
+	border-top: 1px solid #dfdfdf;
+	padding: 10px;
+}
