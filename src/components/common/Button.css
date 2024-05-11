@@ -1,0 +1,10 @@
+.nft-common-btn {
+	background: linear-gradient(
+		90deg,
+		rgb(138, 52, 163) 62%,
+		rgb(58, 46, 120) 100%,
+		rgb(171, 171, 171) 100%
+	);
+	padding: 8px 16px;
+	color: white;
+}

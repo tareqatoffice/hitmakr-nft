@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background: #230f42;
+	font-family: 'Josefin Sans', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}

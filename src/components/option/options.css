@@ -1,0 +1,13 @@
+.nft-options {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+	gap: 1rem;
+	.nft-option-details {
+		display: grid;
+		grid-template-rows: subgrid;
+		grid-row: span 2;
+		gap: 10px;
+		padding: 32px;
+		border: 1px solid #352059;
+	}
+}
