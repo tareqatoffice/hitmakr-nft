@@ -1,14 +1,16 @@
 .nft-card-area {
 	display: grid;
 	gap: 40px;
+	max-width: 90%;
+	margin: auto;
 	.nft-card-title {
-		font-size: 28px;
+		font-size: 36px;
 		font-weight: 900;
 		color: #fff;
 		text-align: center;
 	}
 	.nft-cards {
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(3, 1fr);
 		gap: 1rem;
 		.nft-card-details {
 			display: grid;
@@ -67,6 +69,15 @@
 					}
 				}
 			}
+		}
+	}
+	@media (max-width: 991px) {
+		max-width: 100%;
+		.nft-card-title {
+			font-size: 28px;
+		}
+		.nft-cards {
+			grid-template-columns: repeat(1, 1fr);
 		}
 	}
 }
