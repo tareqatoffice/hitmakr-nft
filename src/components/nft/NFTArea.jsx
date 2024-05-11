@@ -23,7 +23,7 @@ const NFTArea = () => {
                 </div>
                 <Button onClick={clickHandler} extraClassName='w-max mx-auto'>Buy NFT</Button>
             </section>
-            <Modal open={isOpen} title={'Successfully NFT Buy'} onCancel={onCancel} onOk={onOk} extraClassName='w-[50%]' footer={
+            <Modal open={isOpen} title={'Successfully NFT Buy'} onCancel={onCancel} onOk={onOk} extraClassName='sm:w-[50%]' footer={
                 <Button extraClassName="w-full" onClick={onOk}>Ok, Got It.</Button>
             }>
                 <div className="success-info">
