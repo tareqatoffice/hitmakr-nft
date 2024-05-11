@@ -16,8 +16,8 @@
 		}
 		.header-info-desc {
 			font-weight: 400;
-			font-size: 16px;
-			line-height: 24px;
+			font-size: 24px;
+			line-height: 28px;
 		}
 		.header-counts {
 			display: flex;
@@ -45,7 +45,9 @@
 				font-size: 32px;
 			}
 			.header-info-desc {
+				line-height: 18px;
 				line-height: 20px;
+				margin-bottom: 10px;
 			}
 			.header-counts {
 				margin-top: 20px;
