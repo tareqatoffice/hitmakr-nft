@@ -1,18 +1,21 @@
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
+import { useRef } from 'react';
 import NFTCardInfo from './NFTCardInfo';
 import NFTMoney from './NFTMoney';
-const NFTCard = ({ nft, small = false, isCenter = true, isAnimating = false }) => {
+const NFTCard = ({ nft, small = false, index = 1, isAnimating = false }) => {
+    const cardRef = useRef(null);
     const { coverImg, nftInfo, nfts } = nft || {};
     return (
         <motion.div
+            ref={cardRef}
             initial={{ scale: 1, opacity: 1 }}
             animate={isAnimating ? {
-                scale: isCenter ? 1.1 : (isAnimating && !isCenter) ? 0 : 0.8,
-                opacity: isCenter ? 1 : (isAnimating && !isCenter) ? 0 : 0.5,
+                filter: index === 1 ? null : "blur(5px)",
+                x: index === 0 ? cardRef.current.offsetWidth : index === 2 ? -cardRef.current.offsetWidth : null,
             } : null}
             transition={{ duration: 0.3 }}
-            className={`nft-card-details ${small ? 'small-card' : ''}`}
+            className={`nft-card-details ${index === 1 ? 'z-[10]' : 'z-[9]'} ${small ? 'small-card' : ''}`}
         >
             <img
                 className="nft-card-cover"
@@ -33,7 +36,7 @@ const NFTCard = ({ nft, small = false, isCenter = true, isAnimating = false }) =
 };
 NFTCard.propTypes = {
     nft: PropTypes.object,
-    isCenter: PropTypes.boolean,
+    index: PropTypes.number,
     isAnimating: PropTypes.boolean,
     small: PropTypes.boolean,
 };

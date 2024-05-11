@@ -33,12 +33,12 @@ const NFTArea = () => {
             <AnimatePresence>
                 <section className="nft-card-area">
                     <h3 className="nft-card-title">Popular Artworks</h3>
-                    <div className="nft-cards grid">
+                    <div className="nft-cards">
                         {nftCards.map((nft, index) => (
                             <NFTCard
                                 key={index}
                                 nft={nft}
-                                isCenter={index === 1}
+                                index={index}
                                 isAnimating={isAnimating}
                             />
                         ))}
