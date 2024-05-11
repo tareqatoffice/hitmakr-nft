@@ -10,9 +10,9 @@ const Modal = ({ open, title, children, onCancel, footer, extraClassName }) => {
                     <motion.div className='modal-backdrop' onClick={onCancel} />
                     <motion.div
                         className={`modal-container ${extraClassName ?? ''}`}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
+                        initial={{ top: '-50%' }}
+                        animate={{ top: '50%' }}
+                        exit={{ top: '-50%' }}
                         transition={{ duration: 0.3 }}
                     >
                         <div className="modal-title">
